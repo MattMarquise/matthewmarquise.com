@@ -1,0 +1,256 @@
+    body {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none; 
+        color: #555555;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+      
+    .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-bottom: 3px solid transparent;
+    }
+      
+    .topnav a:hover {
+        border-bottom: 3px solid #333;
+    }
+      
+    .topnav a.active {
+        border-bottom: 3px solid #333;
+    }
+
+    footer {
+        border-top: 5px solid black;
+    }
+
+    #sticky-sidebar {
+        position:fixed;
+        max-width: 20%;
+    }
+
+    #box {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+      }
+
+
+    #boxlift {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+    }
+
+    #boxlift:hover {
+        box-shadow: 8px 15px;
+    }
+
+    /* RIGHT SCROLLBAR */
+    body::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: white;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #333;
+    }
+  
+    /* NIGHT MODE */
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+
+
+
+    header {
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #nav {
+        text-decoration: none; 
+        color: #000000;
+    }
+
+    #nav:hover {
+        text-decoration: none; 
+        color: #333;
+    }
+
+    /* HEADER */
+
+.header {
+    background-color: #fff;
+    box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: white;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* HAMBURGER */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* HAMBURGER BTN */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 700px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
+    /* RIGHT SCROLLBAR */
+    body::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: white;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #1e1e24;
+    }
+
+
+    .cardlift {
+        box-shadow: -3px 6px 5px 0px rgba(176,164,176,1);
+        transition: all .3s ease-in-out;
+      }
+      
+      .cardlift:hover {
+        box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
+      }
