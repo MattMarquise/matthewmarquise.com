@@ -1,6 +1,4 @@
     body {
-        background-color: white;
-        color: black;
         font-size: 25px;
         font-family: 'Roboto', sans-serif;
     }
@@ -83,8 +81,8 @@
   
     /* NIGHT MODE */
     .dark-mode{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 
 
