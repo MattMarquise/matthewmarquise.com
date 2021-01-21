@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<head>
+    <title>Product Page Theme</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--NAV-->
+    <header class="header">
+        <a href="#" style="text-decoration: none; color: #434C2D; font-family: 'Playfair Display', serif;" class="logo">Lifestyle Blog</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <ul class="menu" style="color:#434C2D; font-family: 'Playfair Display', serif;">
+            <li class="nav-item"><a href="#" class="nav-link" id="nav">Shop</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav">Places</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav">Lifestyle</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav">Contact Us</a></li>
+        </ul>
+    </header>
+
+</head>
+<br><br><br><br>
+<body>
+    <!--BACK BUTTON-->
+    <a style="padding: 20px; text-decoration: none; color: black;" href="#" role="button">&#8592; Back</a>
+    <br><br>
+    
+    <!--SLIDER-->
+    <div class="container" >
+        <div id="main">
+            <div class="slider" style=" float:left;">
+                
+                <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+                <label for="id1">
+                    <img src="/img/handbag1.png" width="90"/>
+                </label>
+                <img src="/img/handbag1.png" style="max-width:100%;"/>
+                
+                <input type="radio" name="slide_switch" id="id2"/>
+                <label for="id2">
+                    <img src="/img/handbag2.png" width="90"/>
+                </label>
+                <img src="/img/handbag2.png" style="max-width:100%;"/>
+                
+                <input type="radio" name="slide_switch" id="id3"/>
+                <label for="id3">
+                    <img src="/img/handbag3.png" width="90"/>
+                </label>
+                <img src="/img/handbag3.png" style="max-width:100%;"/>
+                
+                <input type="radio" name="slide_switch" id="id4"/>
+                <label for="id4">
+                    <img src="/img/handbag4.png" width="90"/>
+                </label>
+                <img src="/img/handbag4.png" style="max-width:100%;"/>
+                
+                <input type="radio" name="slide_switch" id="id5"/>
+                <label for="id5">
+                    <img src="/img/handbag5.png" width="90"/>
+                </label>
+                <img src="/img/handbag5.png" style="max-width:100%;"/>
+                
+                <input name="slide_switch"/>
+                <label style="border-color: white; cursor:default">
+                    <img width="1"/>
+                </label>
+            </div>
+        </div>
+
+        <!--OVERVIEW-->
+        <div align="center" style="font-family: 'Playfair Display', serif;  float:left; height:250px; width: 100; margin:20px;"> 
+            <table>
+                <h3 align="center">Lifestyle Handbag</h3>
+                <h5><strong style="color:red">$5,800</strong></h5>
+                <ul class="block">
+                    <dl>
+                        <br>
+                        <dd>- Italian Brown Leather</dd>
+                        <dd>- Silver Zipper</dd>
+                        <dd>- Other Neat Things</dd>
+                        <dd>- More</dd>
+                        <dd>- Oh! Here's more</dd>
+                    </dl>
+                </ul>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--OVERVIEW-->
+                <div align="center" style="font-family: 'Playfair Display', serif;"> 
+                    <table>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        </div>
+                        <h3 align="center">Product Dimensions:</h3>
+                        <div class="row">
+                            <div class="col" align="right">Length:</div>
+                            <div class="col" align="left">12"</div>
+                            <div class="w-100"></div>
+                            <div class="col" align="right">Width:</div>
+                            <div class="col" align="left">3"</div>
+                        </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--OVERVIEW-->
+                <div align="center" style="font-family: 'Playfair Display', serif;"> 
+                    <table>
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        </div>
+                        <h3 align="center">Similar Products:</h3>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" style="text-decoration: none; color: black;">
+                                    <div class="card mb-3 border border-dark">
+                                        <img class="card-img-top" src="/img/handbag7.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h3 style="color: #434C2D;">$3,500</h3>
+                                            <h4 class="card-title">Another Handbag</h4>
+                                            <p class="card-text"><small class="text-muted">This is a wide handbag.</small></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col">
+                                <a href="#" style="text-decoration: none; color: black;">
+                                    <div class="card mb-3 border border-dark">
+                                        <img class="card-img-top" src="/img/handbag8.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h3 style="color: #434C2D;">$4,000</h3>
+                                            <h4 class="card-title">Yet Another Handbag</h4>
+                                            <p class="card-text"><small class="text-muted">This is a black handbag.</small></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style=" color: white; font-family: 'Playfair Display', serif; background-color: #434C2D">
+            Built with &#x2764; by Matthew Marquise
+            <br>
+            &copy; 2021 - Lifestyle Blog
+            <br>
+            <a style=" color: white;" href="matthewmarquise.com">matthewmarquise.com</a>
+        </div>
+    </footer>
+
+</body>
+
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    .slider{
+        width: auto;
+        height: auto;
+        position: relative;
+        padding-top: 320px;
+    }
+
+    .slider>img{
+        position: absolute;
+        left: 0; top: 0;
+        transition: all 0.5s;
+        width: auto;
+        height: auto;
+    }
+
+    .slider input[name='slide_switch'] {
+        display: none;
+    }
+
+    .slider label {
+        margin: 18px 0 0 18px;
+        border: 3px solid #999;
+        float: left;
+        cursor: pointer;
+        transition: all 0.5s;
+        
+        opacity: 0.6;
+    }
+
+    .slider input[name='slide_switch']:checked+label {
+        border-color: #666;
+        opacity: 1;
+    }
+
+    .slider input[name='slide_switch'] ~ img {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    .slider input[name='slide_switch']:checked+label+img {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    ul {
+        text-align: left;
+        list-style: inside;
+    }
+
+    ul.block{
+        width:360px; 
+        height: 335px; 
+        border-top:3px solid black; 
+        align-content: center;
+    }
+
+    .col-1 {
+        width: 58px;
+        margin: 1px;
+        display: inline-block;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row > div[class*='col-'] {
+        display: flex;
+    }
+
+    /* Hover effects */
+    .card {
+        transition: -webkit-transform 0.3s ease;
+    }
+    .card:hover {
+        transform: scale(1.01, 1.01);
+    }
+
+    /* Responsive design for image heights */
+    @media (min-width: 576px) { 
+        .card-img-top {
+            height: 50vw;
+        }
+    }
+
+    @media (min-width: 768px) { 
+        .card-img-top {
+            height: 30vw;
+        }
+    }
+
+    @media (min-width: 992px) { 
+        .card-img-top {
+            height: 20vw;
+        }
+    }
+
+    @media (min-width: 1200px) { 
+        .card-img-top {
+            height: 20vw;
+        }
+    }
+</style>

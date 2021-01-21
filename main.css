@@ -1,108 +1,106 @@
-    body {
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-    }
+  body {
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif;
+  }
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: auto;
-    }
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+  }
 
-    a {
-        text-decoration: none; 
-        color: #555555;
-    }
+  a {
+      text-decoration: none; 
+      color: #555555;
+  }
 
-    .topnav {
-        overflow: hidden;
-        background-color: #f1f1f1;
-    }
-      
-    .topnav a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        border-bottom: 3px solid transparent;
-    }
-      
-    .topnav a:hover {
-        border-bottom: 3px solid #333;
-    }
-      
-    .topnav a.active {
-        border-bottom: 3px solid #333;
-    }
-
-    footer {
-        border-top: 5px solid black;
-    }
-
-    #sticky-sidebar {
-        position:fixed;
-        max-width: 20%;
-    }
-
-    #box {
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 5px 10px;
-      }
-
-
-    #boxlift {
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 5px 10px;
-    }
-
-    #boxlift:hover {
-        box-shadow: 8px 15px;
-    }
-
-    /* RIGHT SCROLLBAR */
-    body::-webkit-scrollbar {
-        width: 0.25rem;
-    }
+  .topnav {
+      overflow: hidden;
+      background-color: #f1f1f1;
+  }
     
-    body::-webkit-scrollbar-track {
-        background: white;
-    }
+  .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      border-bottom: 3px solid transparent;
+  }
     
-    body::-webkit-scrollbar-thumb {
-        background: #333;
+  .topnav a:hover {
+      border-bottom: 3px solid #333;
+  }
+    
+  .topnav a.active {
+      border-bottom: 3px solid #333;
+  }
+
+  footer {
+      border-top: 5px solid black;
+  }
+
+  #sticky-sidebar {
+      position:fixed;
+      max-width: 20%;
+  }
+
+  #box {
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 5px 10px;
     }
+
+
+  #boxlift {
+      border: 1px solid;
+      padding: 10px;
+      box-shadow: 5px 10px;
+  }
+
+  #boxlift:hover {
+      box-shadow: 8px 15px;
+  }
+
+  /* RIGHT SCROLLBAR */
+  body::-webkit-scrollbar {
+      width: 0.25rem;
+  }
   
-    /* NIGHT MODE */
-    .dark-mode{
-        background-color: white;
-        color: black;
-    }
+  body::-webkit-scrollbar-track {
+      background: white;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background: #333;
+  }
 
+  /* NIGHT MODE */
+  .dark-mode{
+      background-color: white;
+      color: black;
+  }
 
+  header {
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+  }
 
-    header {
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-    }
+  #nav {
+      text-decoration: none; 
+      color: #000000;
+  }
 
-    #nav {
-        text-decoration: none; 
-        color: #000000;
-    }
+  #nav:hover {
+      text-decoration: none; 
+      color: #333;
+  }
 
-    #nav:hover {
-        text-decoration: none; 
-        color: #333;
-    }
-
-    /* HEADER */
+/* HEADER */
 
 .header {
     background-color: #fff;
@@ -230,25 +228,24 @@
     }
   }
 
-    /* RIGHT SCROLLBAR */
-    body::-webkit-scrollbar {
-        width: 0.25rem;
-    }
-    
-    body::-webkit-scrollbar-track {
-        background: white;
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        background: #1e1e24;
-    }
+  /* RIGHT SCROLLBAR */
+  body::-webkit-scrollbar {
+      width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+      background: white;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background: #1e1e24;
+  }
 
-
-    .cardlift {
-        box-shadow: -3px 6px 5px 0px rgba(176,164,176,1);
-        transition: all .3s ease-in-out;
-      }
-      
-      .cardlift:hover {
-        box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
-      }
+  .cardlift {
+    box-shadow: -3px 6px 5px 0px rgba(176,164,176,1);
+    transition: all .3s ease-in-out;
+  }
+    
+  .cardlift:hover {
+    box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
+  }

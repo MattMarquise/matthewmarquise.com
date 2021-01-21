@@ -1,0 +1,217 @@
+<html>
+    <head>        
+        <title>Matthew Marquise</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico"/>   
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- responsive-full-background-image.css stylesheet contains the code you want -->
+        <link rel="stylesheet" href="responsive-full-background-image.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div><img id="img" class="bg" style="pointer-events: none;"></div>
+            
+            <div class="bottom-left" style="font-size: 30">
+                <span style="cursor:pointer" onclick="openNav()">&#x2630;</span>
+            </div>
+
+            <!--<div class="top-left"></div>-->
+            
+            <div class="top-right" style="font-size: 20;">Wondrous</div>
+
+            <!--<div class="bottom-right"></div>-->
+
+            <!--TIME OF DAY MESSAGE-->
+            <div class="centered" style="font-size: 90; color: white;">
+                <h6>
+                    <script>
+                        /* TIME OF DAY - WELCOME MESSAGE (CENTERED) */
+                        var data = [
+                            [0, 4, "Goodnight,"], 
+                            [5, 11, "Good morning,"],  //Store messages in an array
+                            [12, 17, "Good afternoon,"],
+                            [18, 24, "Goodnight,"]
+                        ],
+                        hr = new Date().getHours();
+
+                        for(var i = 0; i < data.length; i++){
+                            if(hr >= data[i][0] && hr <= data[i][1]){
+                                document.write(data[i][2]);
+                            } 
+                        }
+                    </script>
+                    John
+                </h6>
+            </div>
+        </div>
+
+        <!--SIDENAV-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i style="font-size: 35;" class="fa fa-times-thin fa-2x" aria-hidden="true"></i></a>
+            <a id="nohover">Hello, <br>John&nbsp;Doe<br>____<br></a>
+            <a href="#">Your&nbsp;Dashboard</a>
+            <a href="#">Account</a>
+            <a href="#">News</a>
+            <a href="#">Logout</a>
+        </div>
+    </body>
+</html>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            cursor: default;
+            background-size: cover;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-image: url(/img/landing4.png);
+            font-family: 'Didact Gothic', sans-serif;
+        }
+
+
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Didact Gothic', sans-serif;
+            cursor: default;
+            background-size: cover;
+            background-color: black;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #nohover:hover {
+            color: white;
+        }
+
+        .fa-times-thin:before {
+            content: '\00d7';
+        }
+
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+
+        #img {
+            display: inline-block;
+            width: auto;
+            height: 100%;
+
+        }
+        
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+        }
+        
+        .top-left {
+          position: absolute;
+          top: 8px;
+          left: 16px;
+        }
+        
+        .top-right {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+        }
+        
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+        }
+        
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        /* SIDENAV */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #818181;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+        /* BG IMAGE CHANGE */
+        var im = document.getElementById("img");
+        function changeImage(){
+            var bannerImages = new Array( );
+
+            var images = ["/img/landing1.png","/img/landing2.png","/img/landing3.png","/img/landing4.png","/img/landing5.png"];
+
+            var image = document.getElementById('img');
+            var randomImageIndex = Math.floor( Math.random( ) * images.length );
+            image.src = images[randomImageIndex];
+        }
+        window.setInterval(changeImage, 30000);
+
+    </script>
+    
