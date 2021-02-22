@@ -1,0 +1,317 @@
+<html>
+
+    <head>
+        <title>ONE CONSOLE</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+
+    <body onload="onload()">    
+        <div id="cursor"></div> 
+
+        <div class="sidenav" style="padding: 15;">
+            <br><br><br><br>
+            <div id="border" style="font-family: 'Roboto Mono', monospace;">
+                <a href="consoledash.html" class="linkborder">Dashboard</a>
+                <a href="consolepro.html" style="font-weight: bold;">Profile</a>
+                <!--
+                <a href="consoleacc.html" class="linkborder">Account</a>
+                <a href="consolestore.html" class="linkborder">Store</a>
+                <a href="consolefriends.html" class="linkborder">Friends</a>
+                -->
+            </div>
+        </div>
+
+
+        <div class="container main">
+        
+            <div><img id="img" class="bg" style="pointer-events: none;"></div>
+
+
+            <div class="top-left text" style="padding: 10;">
+                <p style="font-size: 30;">
+                    <script>
+                        /* TIME OF DAY - WELCOME MESSAGE (CENTERED) */
+                        var data = [
+                            [0, 4, "Goodnight,"], 
+                            [5, 11, "Good Morning,"],  //Store messages in an array
+                            [12, 17, "Good Afternoon,"],
+                            [18, 24, "Goodnight,"]
+                        ],
+                        hr = new Date().getHours();
+    
+                        for(var i = 0; i < data.length; i++){
+                            if(hr >= data[i][0] && hr <= data[i][1]){
+                                document.write(data[i][2]);
+                            } 
+                        }
+                    </script>
+                    John<br><span style="font-size: 15;">&nbsp;Status:&nbsp;<span style="color:#45ac78;">ONLINE</span></span>
+                </p>
+            </div>
+            <div class="top-right text" style="padding: 20;">ONE</div>
+
+            <!--
+            <div class="bottom-right text" style="padding: 20;">
+                <a role="button" onclick="darkmode()">🌜 | 🌞</a>
+            </div>
+            -->
+                
+            <div class="centered" style="font-family: 'Roboto Mono', monospace;">
+                <div class="card-body text-secondary">
+                    <div class="content">
+                        <img width="70" height="70" src="/img/matt2.jpg" alt="USER">
+                        <h3>John Doe <br> <span style="font-size: 15; color:#45ac78;">ONLINE</span></h3>
+                    </div>
+                    <div>
+                        <h5 class="card-title" style="border: 1px solid black; width: 49%; padding: 5;">&nbsp;Last Played: Battlefront 2</h5>
+                        <br>
+                        <h6 style="font-weight: bold;">BIO:</h6>
+                        <p class="card-text">I'm a hardcore gamer who never turns down a challenge. Let's play!</p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+<style>
+
+    /* NIGHT MODE */
+
+    html {
+        overflow: hidden;
+        cursor: none;
+    }
+
+    body {
+        margin: 0;
+        cursor: none;
+        color: black;
+        height: 100%;
+        overflow: hidden;
+        touch-action: none;
+        background-size: cover;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    *, *::after, *::before {
+        -webkit-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-app-region: no-drag;
+    }
+
+    .borderless td, .borderless th {
+        border: none;
+    }
+
+    /* NIGHT MODE */
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+
+    .dark-mode#cursor {
+        background-color: transparent;
+        border:1px solid white;    
+        height:20px;
+        width:20px;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* SIDENAV */
+    .sidenav {
+        height: 100%;
+        width: 170px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        cursor: none;
+    }
+
+    .sidenav a:hover {
+        color: black;
+        cursor: none;
+    }
+
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+
+
+    #bottom {
+        margin-bottom: 10px;
+    }
+
+    .linkborder {
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .linkborder::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #000;
+        transition: width .1s;
+    }
+
+    .linkborder:hover::after {
+        width: 30%;
+        transition: width 2s;
+    }
+
+    /* SLIDING CARDS */
+    :root {
+        --gutter: 7px;
+    }
+
+    .hs {
+        display: grid;
+        grid-gap: calc(var(--gutter) / 2);
+        grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+        grid-template-rows: minmax(150px, 1fr);
+        
+        overflow-x: scroll;
+        padding-bottom: calc(.75 * var(--gutter));
+        margin-bottom: calc(-.25 * var(--gutter));
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /*
+    .hs > li, .item {
+        scroll-snap-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 8px;
+    }
+    */
+    
+    #cursor {
+        background-color: transparent;
+        border:1px solid black;    
+        height:20px;
+        width:20px;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+        
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        z-index: 1;
+    }
+    
+    .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+        
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* PROFILE USER CARD */
+    .content {
+        width: 400px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .content img {
+        margin-right: 15px;
+        float: left;
+    }
+
+    .content h3,
+    .content p{
+        margin-left: 15px;
+        display: block;
+        margin: 2px 0 0 0;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        $(document).on('mousemove', function(e) {
+            $('#cursor').css({
+            left: e.pageX,
+            top: e.pageY
+            });
+        })
+    });
+</script>
