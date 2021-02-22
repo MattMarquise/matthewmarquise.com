@@ -9,7 +9,10 @@
 
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" type="text/css" href="arrow.css"/>
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico"/>        
+        <link rel="icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="apple-touch-icon" href="/img/favicon1.ico">
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon1.ico">      
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
@@ -28,24 +31,26 @@
     </head>
     <style>
         body{ 
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
         }
     </style>
         <header class="header">
             
-            <a href="index.html" style="text-decoration: none; color: black" class="logo"><img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">Matthew Marquise</a>
+            <a href="index.html" style="text-decoration: none; color: black; font-size: 30px" class="logo">
+                <img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">
+                Matthew Marquise
+            </a>
+
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             
-            <ul class="menu">
-                    <span align="center">
-                    <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
-                    <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
-                    </span>
+            <ul class="menu" style="display: block; text-align: center;">
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
+                <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
             </ul>
         </header>
 
@@ -59,38 +64,34 @@
             <br>
 
             <!--BOX 1-->
-            <div id="box">
-                <div style="list-style-type:none;">
-                    <!--SOCIAL PROFILES-->
-                    <li>🕵🏼‍♂️ <b>Where To Find Me:</b></li>
-
-                    <div class="card-deck">
-                        <div class="card border-0" style="background-color: transparent;">
-                            <div id="boxlift">
-                                <h5 class="card-title"><i class="fa fa-github"></i> <a href="https://github.com/MattMarquise" style="text-decoration: none;">@MattMarquise</a></h5>
-                                <p class="card-text">Give me a follow on GitHub! Know of a cool open source repo? I'd love to join!</p>
-                            </div>
-                            <br>
+            <div id="box" align="center">
+                <!--SOCIAL PROFILES-->
+                <h3>🕵🏼‍♂️ <b>Where To Find Me:</b></h3>
+                <div class="card-deck">
+                    <div class="card border-0" style="background-color: transparent;">
+                        <div id="boxlift">
+                            <h5 class="card-title"><i class="fa fa-github"></i> <a href="https://github.com/MattMarquise" style="text-decoration: none; color: blue;" class="linkborder">@MattMarquise</a></h5>
+                            <p class="card-text">Give me a follow on GitHub! Know of a cool open source repo? I'd love to join!</p>
                         </div>
-                        <div class="card border-0" style="background-color: transparent;">
-                            <div id="boxlift">
-                                <h5 class="card-title"><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/matthew-m-4a688019a/" style="text-decoration: none;">@Matthew M.</a></h5>
-                                <p class="card-text">Connect with me on LinkedIn to view my previous work experience and certifications!</p>
-                            </div>
-                            <br>
-                        </div>
-                        <div class="card border-0" style="background-color: transparent;">
-                            <div id="boxlift">
-                                <h5 class="card-title"><img width="30" height="30" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png"> <a href="https://dev.to/mattmarquise" style="text-decoration: none;">@mattmarquise</a></h5>
-                                <p class="card-text">Where you'll find all the blog posts I write!</p>
-                            </div>
-                            <br>
-                        </div>
+                        <br>
                     </div>
-
-                    <br>
-                    <li>📬 Send Me A Note: <a href="mailto:developmarq@gmail.com" style="text-decoration: none;">developmarq@gmail.com</a></li>
+                    <div class="card border-0" style="background-color: transparent;">
+                        <div id="boxlift">
+                            <h5 class="card-title"><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/matthew-m-4a688019a/" style="text-decoration: none; color: blue;" class="linkborder">@Matthew Marquise</a></h5>
+                            <p class="card-text">Connect with me on LinkedIn to view my previous work experience and certifications!</p>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="card border-0" style="background-color: transparent;">
+                        <div id="boxlift">
+                            <h5 class="card-title"><img width="30" height="30" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png"> <a href="https://dev.to/mattmarquise" style="text-decoration: none; color: blue;" class="linkborder">@mattmarquise</a></h5>
+                            <p class="card-text">Where you'll find all the blog posts I write!</p>
+                        </div>
+                        <br>
+                    </div>
                 </div>
+                <br>
+                <li>📬 Send Me A Note: <a href="mailto:developmarq@gmail.com" style="text-decoration: none; color: blue;" class="linkborder">developmarq@gmail.com</a></li>
             </div>
         </div>
     </body>

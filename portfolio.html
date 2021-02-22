@@ -9,7 +9,10 @@
 
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" type="text/css" href="arrow.css"/>
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico"/>        
+        <link rel="icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="apple-touch-icon" href="/img/favicon1.ico">
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon1.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
@@ -29,25 +32,27 @@
     
     <style>
         body{ 
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
         }
     </style>
 
     <header class="header">
         
-        <a href="index.html" style="text-decoration: none; color: black" class="logo"><img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">Matthew Marquise</a>
+        <a href="index.html" style="text-decoration: none; color: black; font-size: 30px" class="logo">
+            <img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">
+            Matthew Marquise
+        </a>
+
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         
-        <ul class="menu">
-                <span align="center">
-                <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
-                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
-                <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
-                </span>
+        <ul class="menu" style="display: block; text-align: center;">
+            <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
+            <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
         </ul>
     </header>
 
@@ -66,7 +71,37 @@
                 <div class="col-sm-6">
                     <!--BOX 1-->
                     <div id="box" style="background-color: black;">
-                        <a href="canooclone.html"><img width="500" height="200" src="/img/canooapp.png" class="center" alt="Project 4"></a>
+                        <a href="design_suite.html"><img width="500" height="200" src="/img/designsuite.png" class="center" alt="Project 5"></a>
+                        <br>
+                        <h3 style="color: white;">Design Suite Theme</h3>
+                        <p style="color: white;">This is a project I recently did for fun. The theme is designed by Dwell.com. Works beautifully in both desktop and mobile views as it's fully responsive.</p>
+                        <h5 class="card-title" style="color: white;"><a href="https://github.com/MattMarquise/Design-Suite-Landing-Page-Theme" style="text-decoration: none; color: white;"><i class="fa fa-github"></i> <u>View on GitHub</u></a></h5>
+                        <a href="design_suite.html" class="btn btn-secondary btn-sm ">View Project &#x2192;</a>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="col-sm-6">
+                    <!--BOX 2-->
+                    <div id="box" style="background-color: black;">
+                        <a href="consoledash.html"><img width="500" height="200" src="/img/oneconsole.png" class="center" alt="Project 5"></a>
+                        <br>
+                        <h3 style="color: white;">ONE Console UI Concept</h3>
+                        <p style="color: white;">I wanted to create a minimalistic and modern game console UI. So here is what I have of it so far! I'll definitely add more to it in the future as it's far from done but we'll see!</p>
+                        <h5 class="card-title" style="color: white;"><a href="https://github.com/MattMarquise/Modern-Game-Console-UI" style="text-decoration: none; color: white;"><i class="fa fa-github"></i> <u>View on GitHub</u></a></h5>
+                        <a href="consoledash.html" class="btn btn-secondary btn-sm ">View Project &#x2192;</a>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <!--BOX 3-->
+                    <div id="box" style="background-color: black;">
+                        <a href="canooclone.html"><img width="500" height="200" src="/img/canootheme.png" class="center" alt="Project 4"></a>
                         <br>
                         <h3 style="color: white;">CANOO EV App Redesign</h3>
                         <p style="color: white;">This simple project I recently started working on that is a remake of the app used for CANOO EVs. This project incorporates a CSS and JS animation upon load that then fades into the main dashboard of the app.</p>
@@ -77,9 +112,9 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <!--BOX 1-->
+                    <!--BOX 4-->
                     <div id="box" style="background-color: black;">
-                        <a href="lifestyleshop.html"><img width="500" height="200" src="/img/lifestyleproduct.jpg" class="center" alt="Project 3"></a>
+                        <a href="lifestyleshop.html"><img width="500" height="200" src="/img/lifestyleproduct.jpg" class="center" alt="Project 2"></a>
                         <br>
                         <h3 style="color: white;">Lifestyle Shop - Product Page</h3>
                         <p style="color: white;">This is a product page for the Lifestyle Blog theme. This page is fully responsive while still maintaing the same modern look between mobile and desktop. Strictly HTML and CSS were used in this page.</p>
@@ -94,21 +129,20 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                   <!--BOX 4-->
-                   <div id="box" style="background-color: black;">
-                        <a href="wondrous.html"><img width="500" height="200" src="/img/wondrous1.jpg" class="center" alt="Project 2"></a>
+                    <!--BOX 5-->
+                    <div id="box" style="background-color: black;">
+                        <a href="wondrous.html"><img width="500" height="200" src="/img/wondrous1.jpg" class="center" alt="Project 1"></a>
                         <br>
                         <h3 style="color: white;">Wondrous Modern Theme</h3>
                         <p style="color: white;">This theme is loosly based on and inspired by the Superhuman email landing page. It uses a JS component that greets each user, once logged in, with a message based on the time of day, such as "Good Morning" or "Goodnight", followed by the user's name.</p>
                         <h5 class="card-title" style="color: white;"><a href="https://github.com/MattMarquise/Wondrous-Theme" style="text-decoration: none; color: white;"><i class="fa fa-github"></i> <u>View on GitHub</u></a></h5>
                         <a href="wondrous.html" class="btn btn-secondary btn-sm ">View Project &#x2192;</a>
                     </div>
-                    <br>
+                    <br><br>
                 </div>
-
+                <br>
                 <div class="col-sm-6">
-                        <br>
-                    <!--BOX 3-->
+                    <!--BOX 6-->
                     <div id="box" style="background-color: black;">
                         <a href="lifestyleblog.html"><img width="500" height="200" src="/img/lifestyletheme.jpg" class="center" alt="Project 1"></a>
                         <h3 style="color: white;">Lifestyle Blog Landing Page Theme</h3>
@@ -116,10 +150,11 @@
                         <h5 class="card-title" style="color: white;"><a href="https://github.com/MattMarquise/Lifestyle-Blog" style="text-decoration: none; color: white;"><i class="fa fa-github"></i> <u>View on GitHub</u></a></h5>
                         <a href="lifestyleblog.html" class="btn btn-secondary btn-sm ">View Project &#x2192;</a>
                     </div>
-                    <br><br>
+                    <br>
                 </div>
                 
             </div>
+
         </div>
     </body>
 

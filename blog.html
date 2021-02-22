@@ -9,7 +9,10 @@
 
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" type="text/css" href="arrow.css"/>
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico"/>        
+        <link rel="icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="apple-touch-icon" href="/img/favicon1.ico">
+        <link rel="apple-touch-icon-precomposed" href="/img/favicon1.ico">      
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
@@ -28,24 +31,25 @@
     </head>
     <style>
         body{ 
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
         }
     </style>
         <header class="header">
             
-            <a href="index.html" style="text-decoration: none; color: black" class="logo"><img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">Matthew Marquise</a>
+            <a href="index.html" style="text-decoration: none; color: black; font-size: 30px" class="logo">
+                <img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="hi">
+                Matthew Marquise
+            </a>       
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             
-            <ul class="menu">
-                    <span align="center">
-                    <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
-                    <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
-                    </span>
+            <ul class="menu" style="display: block; text-align: center;">
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav">About</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" id="nav">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link" id="nav">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" id="nav">Contact</a></li>
+                <li class="nav-item"><a role="button" onclick="darkmode()">🌜 | 🌞</a></li>
             </ul>
         </header>
 
