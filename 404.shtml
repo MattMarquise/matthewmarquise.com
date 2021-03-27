@@ -1,0 +1,134 @@
+
+<html>
+    <head>
+        <title>Matthew Marquise - 404</title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="arrow.css"/>
+        <link rel="icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon1.ico"/>
+        <link rel="apple-touch-icon" href="/img/favicon1.ico">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>    
+        <!-- MOBILE NAV -->
+        <div class="hidden-desktop">
+            <header class="header">
+                <a href="home" style="text-decoration: none; color: black; font-size: 30px" class="logo">
+                    <img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="me">
+                </a>
+                
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                
+                <ul class="menu" style="display: block; text-align: center;">
+                    <li class="nav-item"><a href="work" class="nav-link" id="nav">Work</a></li>
+                    <li class="nav-item"><a href="about" class="nav-link" id="nav">About</a></li>
+                    <li class="nav-item"><a href="resume.pdf" class="nav-link" id="nav">Resume</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link" id="nav">Contact</a></li>
+                </ul>
+            </header>
+            <br><br><br><br>
+        </div>
+
+
+        <!-- DESKTOP NAV -->
+        <div class="sidenav hidden-mobile">
+            <br><br>
+
+            <a href="home"><img src="/img/mattsmac.png" width="55" height="60" class="d-inline-block align-top" alt="hi"></a>
+
+            <br>
+
+            <a href="work"><span class="linkborder">Work</span></a>
+            <a href="about"><span class="linkborder">About</span></a>
+            <a href="resume.pdf"><span class="linkborder">Resume</span></a>
+            <a href="contact"><span class="linkborder">Contact</span></a>
+
+            <div class="bottom-left" style="padding: 15px;">
+                <div class="row">
+                    <p><a href="https://www.linkedin.com/in/matthew-marquise-4a688019a/"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a> </p>   
+                    <p><a href="https://github.com/MattMarquise"><i class="fa fa-github" style="font-size: 22px;"></i></a> </p> 
+                    <p><a href="https://dev.to/mattmarquise"><img width="20" height="20" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png"></a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MAIN -->
+        <div class="main">
+             <h3 align="center">404</h3>
+             <h4 align="center">🤔 Hmm. I couldn't seem to find the page you were looking for. </h4>
+
+        </div>  
+    </body>
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        color: black;
+        height: 100%;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: black;
+    }
+
+    /* BLACK BORDERED BUTTON */
+    .borderedbutton {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        color: black;
+    }
+
+    .borderedbutton:hover {
+        background: black;
+        color:white;
+        transition: 1s;
+    }
+
+    /* SMALL BLACK BORDERED BUTTON */
+    .smallborderedbutton {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 8px 20px;
+        font-size: 10px;
+        color: black;
+    }
+
+    .smallborderedbutton:hover {
+        background: black;
+        color:white;
+        transition: 1s;
+    }
+</style>
