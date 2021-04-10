@@ -251,6 +251,13 @@ a:hover {
     text-decoration: none;
 }
 
+
+/* TABLE */
+table, th, td {
+    border: 1px solid black;
+}
+
+
 /* LINKBORDER1 */
 .linkborder {
 display: inline-block;
