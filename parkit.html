@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - ParkIt</title>
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="case" id="content">
+    <p class="back"><a href="index.html#work">← Work</a></p>
+    <h1>ParkIt</h1>
+                <p> Concept | Research / Design / Branding</p>
+                <p>An app to help drivers find parking and parking space owners rent out their spaces.</p>
+                <div>
+                    <img src="/img/cell23.png">
+
+                </div>
+
+
+
+                <img src="/img/cell24.png">
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
+

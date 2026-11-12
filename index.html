@@ -1,390 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - Full-stack web and software developer</title>
+  <meta name="description" content="Matthew Marquise is a full-stack web and software developer based in Raleigh, NC. He designs and builds websites and software.">
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
 
-<html>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
 
-    <head>
-        <title>Matthew Marquise</title>
+  <main id="content">
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Full-stack web and software developer</p>
+        <h1>Matthew Marquise</h1>
+        <p class="lede">I design and build websites and software, from the interface through the stack behind it. Based in Raleigh, NC.</p>
+        <div class="hero-row">
+          <a class="button" href="#work">Selected work</a>
+          <p class="status"><span class="dot" aria-hidden="true"></span> Open to work · Raleigh, NC</p>
+        </div>
+        <ul class="skills" aria-label="Focus">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+          <li>Firebase</li>
+          <li>Shopify</li>
+          <li>Wix</li>
+          <li>Interface design</li>
+        </ul>
+      </div>
+    </section>
 
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="arrow.css"/>
-        <link rel="icon" type="image/x-icon" href="/img/favicon1.ico"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon1.ico"/>
-        <link rel="apple-touch-icon" href="/img/favicon1.ico">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">        
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="image_src" href="/img/hellobanner.jpg" />
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    </head>
-
-    <body>    
-        <!-- MOBILE NAV -->
-        <div class="hidden-desktop">
-            <header class="header">
-                <a href="home" style="text-decoration: none; color: black; font-size: 30px" class="logo">
-                    <img src="/img/mattsmac.png" width="50" height="54" class="d-inline-block align-top" alt="me">
-                </a>
-                
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                
-                <ul class="menu" style="display: block; text-align: center;">
-                    <li class="nav-item"><a href="work" class="nav-link" id="nav">Work</a></li>
-                    <li class="nav-item"><a href="about" class="nav-link" id="nav">About</a></li>
-                    <li class="nav-item"><a href="resume.pdf" class="nav-link" id="nav">Resume</a></li>
-                    <li class="nav-item"><a href="contact" class="nav-link" id="nav">Contact</a></li>
-                </ul>
-            </header>
-            <br><br><br><br>
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Product, brand, and the sites that carry them.</p>
         </div>
 
-
-        <!-- DESKTOP NAV -->
-        <div class="sidenav hidden-mobile">
-            <br><br>
-
-            <a href="home"><img src="/img/mattsmac.png" width="55" height="60" class="d-inline-block align-top" alt="hi"></a>
-
-            <br>
-
-            <a href="work"><span class="linkborder">Work</span></a>
-            <a href="about"><span class="linkborder">About</span></a>
-            <a href="resume.pdf"><span class="linkborder">Resume</span></a>
-            <a href="contact"><span class="linkborder">Contact</span></a>
-
-            <div class="bottom-left" style="padding-bottom: 15%;">
-                <div class="row">
-                    <a href="https://www.linkedin.com/in/matthew-marquise-4a688019a/" target="blank"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a> 
-                    <a href="https://github.com/MattMarquise" target="blank"><i class="fa fa-github" style="font-size: 22px;"></i></a> 
-                    <a href="https://matthewmarquise.medium.com" target="blank"><img width="25" height="25" src="/img/mediumlogo.png"></a>
+        <div class="projects">
+          <article class="project">
+            <a href="careersnc.html">
+              <div class="shot">
+                <img src="/img/cell1.png" alt="Hire Local campaign for RDU Careers, with a downtown office building behind the headline.">
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Careers NC</h3>
+                  <span class="year">2022 - 2023</span>
                 </div>
-            </div>
+                <p class="role">Developer</p>
+                <p class="project-copy">Parent company of RDU Careers and CLT Careers. I shaped the brand, the marketing, and the web experience around a simple idea: help people hire locally.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project">
+            <a href="islandproperty.html">
+              <div class="shot">
+                <img src="/img/cell8.png" alt="Island Property website design.">
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Island Property</h3>
+                  <span class="year">2021 - Present</span>
+                </div>
+                <p class="role">Web designer and developer</p>
+                <p class="project-copy">A quiet, modern site for a real estate and vacation rental agency on Islesboro, Maine. I designed and built a user-centered interface, including the content structure, in Editor X.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project">
+            <a href="uxyall.html">
+              <div class="shot">
+                <img src="/img/cell26.png" alt="Design work for the UX Y'all 2023 conference.">
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>UX Y'all 2023</h3>
+                  <span class="year">2023</span>
+                </div>
+                <p class="role">Lead designer</p>
+                <p class="project-copy">Volunteer design for the conference experience: web pages, social graphics, signage, and other printed pieces used on site.</p>
+              </div>
+            </a>
+          </article>
         </div>
 
+        <div class="more">
+          <article class="tile">
+            <a href="raleighgolfcarts.html">
+              <div class="shot">
+                <img src="/img/cell10.png" alt="Raleigh Golf Carts website.">
+              </div>
+              <div class="tile-body">
+                <h3>Raleigh Golf Carts</h3>
+                <p>Developer and marketing lead · Site and campaign ads</p>
+              </div>
+            </a>
+          </article>
+          <article class="tile">
+            <a href="parkit.html">
+              <div class="shot">
+                <img src="/img/cell23.png" alt="ParkIt concept screens.">
+              </div>
+              <div class="tile-body">
+                <h3>ParkIt</h3>
+                <p>Concept · Research, design, and branding</p>
+              </div>
+            </a>
+          </article>
+          <article class="tile">
+            <a href="streetside.html">
+              <div class="shot">
+                <img src="/img/cell22.png" alt="Street Side case study visuals.">
+              </div>
+              <div class="tile-body">
+                <h3>Street Side</h3>
+                <p>Google UX course · Research, design, and branding</p>
+              </div>
+            </a>
+          </article>
+          <article class="tile">
+            <a href="invezt.html">
+              <div class="shot">
+                <img src="/img/cell14.png" alt="Invezt concept screens.">
+              </div>
+              <div class="tile-body">
+                <h3>Invezt</h3>
+                <p>Concept · Research, design, and branding</p>
+              </div>
+            </a>
+          </article>
+          <article class="tile">
+            <a href="nestcustomchime.html">
+              <div class="shot">
+                <img src="/img/cell12.png" alt="Nest doorbell custom chime concept.">
+              </div>
+              <div class="tile-body">
+                <h3>Nest Doorbell Custom Chime</h3>
+                <p>Concept · Research, design, and branding</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <!-- MAIN -->
-        <div class="main">
-            <h2><span class="wave">👋🏻</span> Hello.</h2>
-            <h3>I'm Matthew Marquise.</h3>
-            <p style="font-size: 13px; font-family: 'Roboto Mono', monospace;">
-                <span class="dot"></span>
-                Currently Marketing and CX Intern @ CQC
-            </p>
-            <div style="font-size: 13px;  width: 90%;">
-                <p>You can call me Matt! As a product designer & front-end developer, I have a strong passion for creating human-centered websites, apps, and software that better the lives of others. <a href="about" class="linkborder2">Learn More About Me &#x2192;</a></p>
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Design and the front end, side by side.</p>
+        </div>
+        <div class="timeline">
+          <div class="role-row">
+            <em>Jan - Sept 2026</em>
+            <strong>Basecamp</strong>
+            <span>Lead developer</span>
+          </div>
+          <div class="role-row">
+            <em>2021 - Present</em>
+            <strong>Island Property</strong>
+            <span>Web designer and developer</span>
+          </div>
+          <div class="role-row">
+            <em>2022 and 2023</em>
+            <strong>UX Y'all Conference</strong>
+            <span>Lead designer</span>
+          </div>
+          <div class="role-row">
+            <em>2022 - 2023</em>
+            <strong>Careers NC</strong>
+            <span>Developer</span>
+          </div>
+          <div class="role-row">
+            <em>2022 - 2023</em>
+            <strong>CQC</strong>
+            <span>CNC file design, e-commerce, and machine operation</span>
+          </div>
+          <div class="role-row">
+            <em>2020 - 2021</em>
+            <strong>CQC</strong>
+            <span>Customer experience and marketing intern</span>
+          </div>
+          <div class="role-row">
+            <em>2020 - 2021</em>
+            <strong>Raleigh Golf Carts</strong>
+            <span>Developer and marketing lead</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p>Courses and certificates.</p>
+        </div>
+        <div class="timeline">
+          <div class="role-row">
+            <em>2021</em>
+            <strong>Google</strong>
+            <span>UX Design Professional Certificate</span>
+          </div>
+          <div class="role-row">
+            <em>2021</em>
+            <div class="school">
+              <strong>Harvard University</strong>
+              <a class="cert" href="https://certificates.cs50.io/8b0c3008-1979-4b69-95cd-8d60a1c0d8fc" target="_blank" rel="noopener">View certificate</a>
             </div>
+            <span>CS50, Introduction to Computer Science</span>
+          </div>
+          <div class="role-row">
+            <em>2021</em>
+            <strong>Goldsmiths, University of London</strong>
+            <span>Mathematics for Computer Science</span>
+          </div>
+          <div class="role-row">
+            <em>2021</em>
+            <strong>Google Digital Garage</strong>
+            <span>Fundamentals of Digital Marketing</span>
+          </div>
+          <div class="role-row">
+            <em>2021</em>
+            <strong>HubSpot Academy</strong>
+            <span>Content Marketing</span>
+          </div>
+          <div class="role-row">
+            <em>2019</em>
+            <strong>Wake Technical Community College</strong>
+            <span>Intro to Computer Science</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <br>
-
-            <!-- WHAT I'VE BEEN UP TO-->
-            <h3>What I've been doing lately...</h3>
-            <img src="/img/islandpropertypromo.png" alt="" width="100%" style="padding: 2%; border-radius: 40px;">
-            <p style="font-size: 13px; font-family: 'Roboto Mono', monospace; padding-left: 2%;">
-                I've been working to deisgn and develop a new, modern website for a real estate agency in Maine. <a href="islandproperty" class="linkborder2">Read the case study &#x2192;</a>
-            </p>
-
-            <br>
-                
-            <!-- RECENT PROJECTS LIST -->
-            <h3 style="font-weight: lighter;">Featured Work:</h3>
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="islandproperty">
-                        <div class="card border-0" style="width: 100%;">
-                            <img class="card-img-top border-0 card-hover" src="/img/islandpropertybanner.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <a></a>
-                                <div class="row col-12">
-                                    <div class="col-8 card-text" style="font-size: 12px; padding: 0%; text-decoration: none;">Island Property<br><span style="color: grey;">Research / Design / Development</span></div>
-                                    <div class="col-4" align="right" style="font-size: 15px;">
-                                        <a href="https://matthewmarquise.medium.com/working-with-island-property-to-bring-a-fresh-modern-look-to-their-website-and-brand-36e2b2874a3e?sk=da61b65800a3701494fa57bce7e7741a" style="text-decoration: none; color: black;" target="blank"><img width="25" height="25" src="/img/mediumlogo.png"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <br>
+    <section id="writing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Writing</h2>
+          <p>Notes on interface details.</p>
+        </div>
+        <div class="writing">
+          <article class="article">
+            <a href="https://dev.to/mattmarquise/how-to-create-a-custom-circular-cursor-for-your-website-4i7p" target="_blank" rel="noopener">
+              <img src="/img/article-cursor.png" alt="A pointer cursor changing into a circle.">
+              <div class="article-body">
+                <div class="article-meta">
+                  <small>Dev.to</small>
+                  <span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>35,138</span>
                 </div>
-
-                <div class="col-sm-6">
-                    <a href="streetside">
-                        <div class="card border-0" style="width: 100%;">
-                            <img class="card-img-top border-0 card-hover" src="/img/streetsidebanner2.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <a></a>
-                                <div class="row col-12">
-                                    <div class="col-8 card-text" style="font-size: 12px; padding: 0%; text-decoration: none;">Street Side - Concept<br><span style="color: grey;">Research / Design / Testing / Branding / Graphic Design</span></div>
-                                    <div class="col-4" align="right" style="font-size: 15px;">
-                                        <a href="https://matthewmarquise.medium.com/street-side-an-app-to-change-how-everyone-eats-at-food-trucks-44f09091b091?sk=ab59dd6993f2a2643b84e5b0df8648c4" style="text-decoration: none; color: black;" target="blank"><img width="25" height="25" src="/img/mediumlogo.png"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <br>
+                <h3>A custom circular cursor</h3>
+                <p>How a small piece of front-end craft changes the feel of a site, and how to build one.</p>
+                <span class="go">Read the article</span>
+              </div>
+            </a>
+          </article>
+          <article class="article">
+            <a href="https://dev.to/mattmarquise/implement-dark-mode-on-your-website-5c5a" target="_blank" rel="noopener">
+              <img src="/img/article-dark-mode.png" alt="A sun icon beside a moon icon.">
+              <div class="article-body">
+                <div class="article-meta">
+                  <small>Dev.to</small>
+                  <span class="views"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>16,090</span>
                 </div>
-            
-            </div>
+                <h3>Dark mode, in three steps</h3>
+                <p>A plain HTML, CSS, and JavaScript approach to a theme people expect to find.</p>
+                <span class="go">Read the article</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <div class="center">
-                <a href="work" class="btn smallborderedbutton">View More &#x2192;</a>
-            </div>
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <figure class="portrait">
+          <img src="/img/about.jpg" alt="Matthew Marquise outdoors, smiling and pointing toward the hills behind him.">
+        </figure>
+        <div class="about-copy">
+          <h2>About</h2>
+          <p>I’m Matthew Marquise, 24 years old, and based in Raleigh. I design the interface and build the website or software behind it.</p>
+          <h3>How I work</h3>
+          <p>I start with the person using the product. I look at what already exists, sketch alternatives, and keep the technical constraints in the room while the interface is still cheap to change. The goal is work that is clear for people and practical to ship.</p>
+          <h3>Outside the work</h3>
+          <p>Tennis, design events, pizza, photography, and movies, usually while trying to figure out how a shot was made.</p>
+        </div>
+      </div>
+    </section>
 
-            <br><br>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <h2>Let’s build something clear.</h2>
+            <p>I’m open to full-stack, front-end, and design roles. If you want to talk through a product, or a site that needs a calmer interface, write me.</p>
+          </div>
+          <div class="contact-links">
+            <a class="email" href="mailto:matthewmarquise@icloud.com">Email me</a>
+            <a href="resume.pdf">Resume</a>
+            <a href="https://github.com/MattMarquise" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://dribbble.com/MatthewMarquise" target="_blank" rel="noopener">Dribbble</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <!-- RECENT BLOG POSTS -->
-            <h3 style="font-weight: lighter;">Featured Blog Posts:</h3>
-            <div class="row">
-                <div class="col-sm-6" style="font-size: 12px">
-                    <div class="card border-0" style="width: 100%;">
-                        <img class="card-img-top border border-dark" src="/img/StreetSideBanner.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Case Study: Street Side</h3>
-                            <p class="card-text">At the beginning of 2021, I started a project as part of Google’s UX Design Professional Certificate specialization. That project has evolved into an app idea called Street Side that would change the way people order from food trucks, increase the number of people who regularly eat at food trucks, and transform how truck owners operate their business. The origin of the idea...</p>
-                            <div class="row">
-                                <div class="col">
-                                    <img src="/img/claps.jpg" alt="Claps" width="16px" height="auto"> 39 Claps
-                                </div>
-                                <div class="col" align="right">
-                                    <a href="https://matthewmarquise.medium.com/street-side-an-app-to-change-how-everyone-eats-at-food-trucks-44f09091b091" class="btn btn-sm smallborderedbutton">Read Case Study &#x2192;</a>
-                                </div>
-                            </div>
-                            <p class="card-text"><small class="text-muted">Jun. 18, 2021</small></p>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-
-                <div class="col-sm-6" style="font-size: 12px">
-                    <div class="card border-0" style="width: 100%;">
-                        <img class="card-img-top border border-dark" src="/img/devtocover1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h3>Implement Dark Mode On Your Website.</h3>
-                            <p class="card-text">Dark Mode is an extremely popular feature to implement into your website using basic HTML, CSS and JS. So why don't you have it on yours yet? In three easy steps...</p>
-                            <div class="row">
-                                <div class="col">
-                                    <i class="fa fa-eye" aria-hidden="true"></i> 13,617 Views
-                                </div>
-                                <div class="col" align="right">
-                                    <a href="https://dev.to/mattmarquise/implement-dark-mode-on-your-website-5c5a" class="btn btn-sm smallborderedbutton">Read Full Article &#x2192;</a>
-                                </div>
-                            </div>
-                            <p class="card-text" style="font-size: 12px;"><small class="text-muted">Feb. 25, 2021</small></p>                                             
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="center">
-                <a href="https://matthewmarquise.medium.com" class="btn smallborderedbutton">Read More on Medium &#x2192;</a>
-            </div>
-
-            <br>
-
-            <div class="container" class="hidden-desktop">
-                <p class="hidden-desktop" align="center">Connect with Me:</p>
-                <div class="row" align="center" class="hidden-desktop">
-
-                    <div class="col">
-                        <a class="hidden-desktop" href="https://www.linkedin.com/in/matthew-marquise-4a688019a/"><i class="fa fa-linkedin" style="font-size: 22px;"></i></a>
-                    </div>
-
-                    <div class="col">
-                        <a class="hidden-desktop" href="https://github.com/MattMarquise"><i class="fa fa-github" style="font-size: 22px;"></i></a>
-                    </div>
-
-                    <div class="col">
-                        <a class="hidden-desktop" href="https://dev.to/mattmarquise"><img width="20" height="20" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png"></a>
-                    </div>
-
-                </div>
-            </div>
-
-            <br>
-
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
-
-            <br>
-
-                <!-- FOOTER -->
-                <div class="row">
-                    <div class="col-6 col-md-4" style="font-size: 12px;">
-                        <b><u>Skills</u></b>
-                        <br>
-                        <div style="padding: 4%;">
-                            <dl>
-                                <dt>Front-End Development:</dt>
-                                <div style="padding-left: 10px;">
-                                    <dd>- Html</dd>
-                                    <dd>- CSS</dd>
-                                    <dd>- JS</dd>
-                                    <dd>- Laravel</dd>
-                                    <dd>- Experience using Squarespace, Shopify, and Wix Editor</dd>
-                                    <dd>- Responsive Web Design</dd>
-                                    <dd>- Rapid Bug Fixes</dd>
-                                </div>
-
-                                <br>
-
-                                <dt>UX Design:</dt>
-                                <div style="padding-left: 10px;">
-                                    <dd>- Research</dd>
-                                    <dd>- Writing</dd>
-                                    <dd>- Wireframing</dd>
-                                    <dd>- Design</dd>
-                                    <dd>- Prototyping</dd>
-                                    <dd>- User Centered Research, Design, Testing</dd>
-                                    <dd>- Experience using Figma & Adobe Xd</dd>
-                                </div>
-
-                                <br>
-
-                                <dt>Marketing:</dt>
-                                <div style="padding-left: 10px;">
-                                    <dd>- Social Ad Campaigns</dd>
-                                    <dd>- Mailchimp Campaigns</dd>
-                                    <dd>- Photography</dd>
-                                    <dd>- Graphic Designs</dd>
-                                </div>
-
-                                <br>
-
-                                <dt>Other:</dt>
-                                <div style="padding-left: 10px;">
-                                    <dd>- Music Producing / Songwriting</dd>
-                                    <dd>- Digital Photography & Cinematography</dd>
-                                    <dd>- Digital Designs For CNC Machines</dd>
-                                    <dd>- Hardcore Tennis Player</dd>
-                                </div>
-
-                            </dl>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-4" style="font-size: 12px;">
-                        <b><u>Experience</u></b>
-                        <div style="padding: 4%;">
-                            <dt>Island Property:</dt>
-                            <dd style="color: grey;">Website Designer and Developer <br> Freelance / July - December 2021</dd>
-                            <div style="padding-left: 10px;">
-                                <p>Designed and developed a modern website for Island Property, a real estate and vacation rental agency. Used Wix’s EditorX and database management tools to design and develop a user-centered interface.</p>
-                                <dd>- Product Design</dd>
-                                <dd>- Web Development and Maintenance Using Wix Advanced EditorX Platform</dd>
-                            </div>
-
-                            <br>
-
-                            <dt>Custom Quality Covers:</dt>
-                            <dd style="color: grey;">Customer Experience and Marketing, Intern <br> Part-Time / 2020 - Present</dd>
-                            <div style="padding-left: 10px;">
-                                <p>Selected to lead the sales marketing & customer experience (CX) for CQC, utilizing and increasing my knowledge of Mailchimp email campaigns and website development/maintenance with Shopify and Squarespace sites and DNS and CDN management. Enhanced their online presence by scaling social media presence and conducting SEO keyword research by analyzing the target audience.</p>
-                                <dd>- Mailchimp Email Ad Campaigns</dd>
-                                <dd>- Web Development and Maintenance with Shopify and Squarespace</dd>
-                                <dd>- Social Media Ad Campaigns</dd>
-                                <dd>- Digital Designs For CNC Machines</dd>
-                            </div>
-
-                            <br>
-
-                            <dt>Raleigh Golf Carts:</dt>
-                            <dd style="color: grey;">Developer & Marketing Intern <br> Part-Time / Dec 2020 - Apr 2021</dd>
-                            <div style="padding-left: 10px;">
-                                <p>Designed & developed a modern, user focused website while using graphic design skills to create high quality advertisements used in various marketing campaigns across their social media profiles.</p>
-                                <dd>- Social Media Ad Campaigns</dd>
-                                <dd>- Web Design & Development</dd>
-                                <dd>- Photography & Graphic Design</dd>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4" style="font-size: 12px;">
-                        <b><u>Education/Certifications</u></b>
-                        <br>
-                        <div style="padding: 4%;">
-                            <p>Google - UX Design Specialization Certification</p>
-                            <p>Google Digital Garage - Fundamentals of Digital Marketing</p>
-                            <p>HubSpot - Content Marketing</p>
-                            <p>Goldsmith's, University of London - Mathematics for Computer Science</p>
-                            <p>Harvard CS50 - Introduction to Computer Science</p>
-                        </div>
-
-                        <br>
-
-                        <b><u>Achievements</u></b>
-                        <br>
-                        <div style="padding: 4%;">
-                            <p>Daily UI 100 Day Design Challenge</p>
-                            <p>Hacktoberfest 2021 PR Challenge</p>
-                            <p>Hacktoberfest 2020 PR Challenge</p>
-                        </div>
-                    </div>
-                </div>
-                <br><br><br>
-                <p style="font-size: 12px; color: grey;" align="center">This site is powered by pure HTML, CSS & JS.</p>
-
-        </div>  
-    </body>
-
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
 </html>
-
-<style>
-    body {
-        margin: 0;
-        color: black;
-        height: 100%;
-        background-color: white;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover{
-        text-decoration: none;
-        color: black;
-    }
-
-    /* BLACK BORDERED BUTTON */
-    .borderedbutton {
-        border: 2px solid black;
-        background-color: white;
-        color: black;
-        padding: 14px 28px;
-        font-size: 16px;
-        color: black;
-    }
-
-    .borderedbutton:hover {
-        background: black;
-        color:white;
-        transition: 1s;
-    }
-
-    /* SMALL BLACK BORDERED BUTTON */
-    .smallborderedbutton {
-        border: 2px solid black;
-        background-color: white;
-        color: black;
-        padding: 8px 20px;
-        font-size: 10px;
-        color: black;
-    } 
-
-    .smallborderedbutton:hover {
-        background: black;
-        color:white;
-        transition: 1s;
-    }
-</style>

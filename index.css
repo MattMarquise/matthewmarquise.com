@@ -4,12 +4,11 @@ body {
     height: 100%;
     background-size: cover;
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 *, *::after, *::before {
-    -webkit-user-select: none;
     -webkit-user-drag: none;
     -webkit-app-region: no-drag;
 }
@@ -78,7 +77,7 @@ body {
 }
 
 .header .menu-icon .navicon {
-    background: #333;
+    background: #ffff;
     display: block;
     height: 2px;
     position: relative;
@@ -151,7 +150,7 @@ body {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 901px) {
     .sidenav {
         width: 16%;
         position: fixed;
@@ -179,10 +178,9 @@ body {
     }
 
     .main {
-        margin-left: 18%; /* Same width as the sidebar + left position in px */
+        margin-left: 5%; /* Same width as the sidebar + left position in px */
         margin-right: 5%;
         font-size: 28px; /* Increased text to enable scrolling */
-        padding: 5% 10px;
         animation: fadeInAnimation ease 2s;
         animation-iteration-count: 1; 
         animation-fill-mode: forwards;
@@ -203,7 +201,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .hidden-mobile {
         display: none;
     }
@@ -212,7 +210,6 @@ body {
         margin-left: 5%; /* Same width as the sidebar + left position in px */
         margin-right: 5%;
         font-size: 28px; /* Increased text to enable scrolling */
-        padding: 5% 10px;
         animation: fadeInAnimation ease 2s;
         animation-iteration-count: 1; 
         animation-fill-mode: forwards;
@@ -334,6 +331,31 @@ transition: width 1s;
     transform: translate(-50%, -50%);
 }
 
+
+.navItem {
+    background-color: white;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+
+.navItem:hover {
+    background-color: #e2e2e2;
+    transition: 0.8s;
+}
+
+
+.navItem2 {
+    background-color: #efefef;
+    transition: 0.6s;
+    border-radius: 5px;
+}
+
+.navItem2:hover {
+    background-color: #e2e2e2;
+    transition: 0.6s;
+}
+
+
 .wave {
     animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -362,3 +384,30 @@ transition: width 1s;
     } 
 } 
 
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(97, 230, 97);
+    border-radius: 50%;
+    display: inline-block;
+    animation: fadeinout 2s linear 1 forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.experience-card {
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
+.experience-card:hover {
+    background-color: #f1f1f1;
+    transition: 0.8s;
+    border-radius: 10px;
+}

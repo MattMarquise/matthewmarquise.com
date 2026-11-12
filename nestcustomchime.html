@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - Nest Doorbell Custom Chime</title>
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="case" id="content">
+    <p class="back"><a href="index.html#work">← Work</a></p>
+    <h1>Nest Doorbell Custom Chime</h1>
+                <p> Concept | Research / Design / Branding</p>
+                <div>
+                    <img src="/img/cell12.png">
+
+                </div>
+
+                <h3>Design Notes</h3>
+                <p>
+                    In October of 2021, Google announced they would be adding a few, spooky Halloween chime sounds to their Nest doorbell. This got me thinking... why not allow users to add custom chimes anytime of year? I really enjoyed creating this neat but random feature concept in Figma. <i>I'm not affiliated with Google or Nest.</i>
+                </p>
+
+                <img src="/img/chime2.jpg">
+
+
+                <h3>How It Works</h3>
+                <p>
+                    For a user to add a custom chime, they first need to navigate to the Nest app and choose their doorbell. Next, the user opens the doorbell settings where they'll choose the Chime option. They will be presented with a list of existing chimes that can be added to their doorbell. They can also add a custom chime by clicking on the "Add Custom Chime" button, thenn naming and uploading an audio file. Finally, they press the "Save" button. Once they have saved the chime, they can click on the "+" button to add the chime to their doorbell.
+                </p>
+
+                <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSbV3SZPz4d77aRskjL9qLk%2FGoogle-Nest-Doorbell-Custom-Chime-(Concept)%3Fpage-id%3D0%253A1%26node-id%3D3%253A2%26viewport%3D241%252C48%252C0.38%26scaling%3Dscale-down%26starting-point-node-id%3D3%253A2" allowfullscreen></iframe>
+
+
+                <h3>Conclusion</h3>
+                <p>
+                    I hope Google will be able to add this feature to their Nest doorbell in the future as it would be fun to get reactions from those who ring it. This is a concept and I have no affiliation with Nest or Google. Thanks.
+                </p>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
+

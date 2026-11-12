@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - UX Y'all</title>
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="case" id="content">
+    <p class="back"><a href="index.html#work">← Work</a></p>
+    <h1>UX Y'all</h1>
+    <p><i>Web, print, and marketing design, 2022 and 2023.</i> Volunteer design for the conference, with other designers, across the website and the room.</p>
+    <img src="/img/cell26.png" alt="Design for the UX Y'all 2023 conference.">
+    <h3>2023</h3>
+    <p>Web pages, social graphics, and printed pieces for the 2023 conference, including event signage and other on-site materials.</p>
+    <img src="/img/cell11.png" alt="Additional UX Y'all 2023 design.">
+    <h3>2022</h3>
+    <p>Swag, marketing, and other pieces for the 2022 conference, made with the volunteer design team.</p>
+    <img src="/img/cell5.png" alt="UX Y'all 2022 design.">
+    <img src="/img/cell6.png" alt="UX Y'all 2022 marketing.">
+    <img src="/img/cell7.png" alt="UX Y'all 2022 print.">
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+</html>

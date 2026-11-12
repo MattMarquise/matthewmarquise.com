@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Pinger test</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  
+<h1>Online user counter</h1>
+
+
+<p id="counter">Users online: <span id="userCount">loading…</span></p>
+
+<script type="text/javascript" charset="utf-8">
+$().ready(function (){
+  var token = '';
+  var pinger = setInterval(function (){
+    
+    $.ajax({
+      cache: false,
+      data: {
+        token: token,
+      },
+      timeout: 2500,
+      type: 'GET',
+      url: 'pinger.php',
+      dataType: 'json',
+      success: function (data, status, jqXHR){
+        $('#userCount').text(data.userCount);
+        token = data.token;
+      }
+    });
+    
+  }, 5000);
+});
+</script>
+  
+  
+</body>
+</html>

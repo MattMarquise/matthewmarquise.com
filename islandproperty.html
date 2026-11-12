@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - Island Property</title>
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="case" id="content">
+    <p class="back"><a href="index.html#work">← Work</a></p>
+    <h1>Island Property</h1>
+                <p><i>Lead Web Designer & Developer, Jul 2021 - Present.</i> Designed and developed a modern, minimalistic website for Island Property, a real estate and vacation rental agency on Islesboro, Maine. Used Wix’s EditorX and database management tools to design and develop a user-centered interface.</p>
+                <div>
+                    <img src="/img/cell8.png">
+
+                </div>
+                <h3>The Challenge</h3>
+                <p>
+                    When initially approached to revamp Island Property's dated website, the task seemed daunting due to my inexperience in the real estate and vacation rental tech space. However, I soon realized that the project demanded the same design thinking and development process I had previously applied elsewhere. My role encompassed comprehensive responsibilities, including research, design, development, usability testing, and the creation of branding guidelines featuring a robust design system. The primary challenge was to reimagine the outdated design and present a fresh identity. While the previous website maintained a clear and accessible user flow, its user interface was trapped in the 90s and failed to capture the brand's essence. This austere style led to various interaction issues, and the site lacked responsiveness, necessitating a ground-up rebuild. Remarkably, the Island Property logo was the sole element retained from the original site.
+                </p>
+
+                <h3>Early Design Research</h3>
+                <p>
+                    Embarking on the project, I drew inspiration from modern architectural and real estate websites, creating a mood board that laid the foundation for a sleek and visually appealing design. The use of white space and generous margins, consistent across these sites, mirrored the aesthetics of a luxury magazine, inviting visitors to explore. I aimed to introduce this bold, welcoming style to the new Island Property website.
+                </p>
+
+                <img src="/img/ipcell1.png">
+
+                <h3>Initial Design Steps</h3>
+                <p>
+                    Translating my vision from the mood board into reality, I crafted paper mockups illustrating how the design would adapt to both desktop and mobile screens. These initial sketches revealed the emergence of the modernist design style.
+
+                    Utilizing Figma, I established a comprehensive design system, informed by my mood board. This system meticulously defined elements like button border radii, hover states, font styles and sizes, and the color palette. This foundational design step proved invaluable throughout the site's development.
+                </p>
+
+
+                <img src="/img/ipcell2.png">
+
+
+                <p>
+                    Employing the MoSCoW (Must, Should, Could, Won't have) method, I prioritized different features of the site. For instance, it was essential to display weekly availability for all rental properties ("Must"), while implementing an online booking feature was not pursued, as the client preferred personal bookings over the phone ("Won't").
+                </p>
+
+                <h3>Implementation of Design Choices</h3>
+                <p>
+                    Using Wix's EditorX platform, I meticulously constructed numerous pages, adhering to the design system for consistency. Elements such as prominent header images, staggered image and description sections, column layouts, and compelling calls to action were integrated. 
+
+                    After months of iteration and minor design refinements, the new Island Property website finally achieved the modern, luxurious aesthetic I aspired to create. Every detail, from rounded borders to font styles and image placement, synergized to create a spacious and inviting user experience.
+                </p>
+
+                <img src="/img/ipcell3.png">
+
+
+                <h3>Accessibility</h3>
+                <p>
+                    Accessibility remained a paramount concern. I ensured clarity through hierarchical sectioning, provided alternative text for images, and implemented concise and predictable navigation. Additionally, I applied Gestalt Principles to property listings, grouping all elements closely for intuitive perception. Header images were deliberately distinguished with rough borders, while other images featured rounded borders. These thoughtful design choices ensured that users with diverse abilities could navigate the site with ease.
+                </p>
+
+                <img src="/img/cell9.png">
+
+                <h3>Responsive Design</h3>
+                <p>
+                    Given the uncertainty of the primary screen size for site access, I adopted a "desktop-down-to-mobile" approach in my design process. This strategic approach allowed me to cater to various screen sizes effectively.
+                </p>
+
+                <h3>The Result</h3>
+                <p>
+                    With the completion of Island Property's revamped website, I not only honed my ability to articulate design decisions to clients but also garnered invaluable experience in real estate and vacation rental web design. The live website has set a new standard for the many other dated websites related to Islesboro, as this site redefined design expectations in an arena where many websites are long overdue for a modern facelift.
+                </p>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
+

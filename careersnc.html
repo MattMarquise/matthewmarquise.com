@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew Marquise - Careers NC</title>
+  <link rel="icon" type="image/png" href="/img/memoji.png">
+  <link rel="apple-touch-icon" href="/img/memoji.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">
+        <img class="mark" src="/img/memoji.png" alt="">
+        Matthew Marquise
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="case" id="content">
+    <p class="back"><a href="index.html#work">← Work</a></p>
+    <h1>Careers NC</h1>
+                <p><i>Developer, May 2022 - 2023.</i> Careers NC is the parent company of RDU Careers and CLT Careers.</p>
+                <div>
+                    <img src="/img/cell1.png">
+
+                </div>
+
+                <h3>The Genesis of Careers NC</h3>
+                <p>
+                    I embarked on an exciting journey while developing Careers NC (parent company of RDU Careers and CLT Careers), a platform aimed at connecting talent with local job opportunities in North Carolina. Using my knowledge of full-stack development and UX design, I set out to create a dynamic and user-friendly platform that would redefine the local job search experience. The vision was clear: to simplify the local job hunt process for job seekers and empower employers of all sizes to find the right local talent effortlessly.
+                </p>
+
+                <img src="/img/cell2.png">
+
+
+                <h3>The Tech Behind the Vision</h3>
+                <p>
+                    Behind the scenes, I harnessed the power of Vue 3 and Vite to build a responsive and lightning-fast frontend. This modern stack not only elevated the user experience, but also streamlined development. Firebase, our backend infrastructure, handled data management, authentication, and real-time updates with remarkable efficiency. Together, this tech stack laid the foundation for a seamless and secure platform.
+                </p>
+
+
+                <img src="/img/cell3.png">
+
+
+                <h3>The Careers NC Impact</h3>
+                <p>With Careers NC, we're not just creating a platform; we're fostering connections, opening doors, and catalyzing career growth in North Carolina. Our mission is to empower local individuals and organizations in this rapidly growing state. Stay tuned as we continue to innovate and facilitate meaningful connections in the local NC job market! RDU Careers has already launched and CLT Careers will be launching soon.</p>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <span>Designed and built by Matthew Marquise.</span>
+      <span><span aria-hidden="true">📍</span> Raleigh, NC</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-toggle").checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
+
